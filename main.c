@@ -11,7 +11,7 @@ int main() {
     for(i = 0; i < 30; i++) {
         printf("diga um número: ");
         scanf("%i", &numeros[i]);
-        if(&numeros[i] <= 0) {
+        if(numeros[i] <= 0) {
             break;
         }
     }

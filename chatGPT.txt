@@ -1,3 +1,30 @@
 dado uma lista da dados chamada `numero[30]` na linguagem C, faça um pseudocodigo dos valores `m` e `b` da regreção Linear desses números inteiros, onde esses valores servem na matemática para criar a reta => ```Matemática
 y = m*x + b
 ```
+
+// 1. Declare as variáveis necessárias:
+//    - int numero[30]; // lista de dados
+//    - int n = 30;     // número de elementos na lista
+//    - int soma_x = 0; // soma dos valores de x
+//    - int soma_y = 0; // soma dos valores de y
+//    - int soma_xy = 0; // soma dos produtos de x e y
+//    - int soma_x_quadrado = 0; // soma dos quadrados de x
+//    - float m;        // coeficiente angular da reta
+//    - float b;        // coeficiente linear da reta
+
+// 2. Leia os valores da lista de dados 'numero[30]'.
+
+// 3. Calcule as somas necessárias:
+//    - Para i de 0 até n-1:
+//      - soma_x = soma_x + i
+//      - soma_y = soma_y + numero[i]
+//      - soma_xy = soma_xy + (i * numero[i])
+//      - soma_x_quadrado = soma_x_quadrado + (i * i)
+
+// 4. Calcule o valor de 'm':
+//    - m = ((n * soma_xy) - (soma_x * soma_y)) / ((n * soma_x_quadrado) - (soma_x * soma_x))
+
+// 5. Calcule o valor de 'b':
+//    - b = (soma_y - (m * soma_x)) / n
+
+// 6. Imprima os valores de 'm' e 'b'.

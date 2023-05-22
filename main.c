@@ -6,12 +6,13 @@ int main() {
 
     int numeros[30], i;
     for(i = 0; i < 30; i++) {
-        numeros[i] = 0;
+        numeros[i] = 1;
     }
     for(i = 0; i < 30; i++) {
         printf("diga um número: ");
         scanf("%i", &numeros[i]);
         if(numeros[i] <= 0) {
+            numeros[i] = 1;
             break;
         }
     }

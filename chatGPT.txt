@@ -1,0 +1,3 @@
+dado uma lista da dados chamada `numero[30]` na linguagem C, faça um pseudocodigo dos valores `m` e `b` da regreção Linear desses números inteiros, onde esses valores servem na matemática para criar a reta => ```Matemática
+y = m*x + b
+```

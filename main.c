@@ -37,11 +37,11 @@ int main() {
         soma_x_quadrado += x * x;
     }
 
-    m = (n * soma_xy - soma_x * soma_y) / (n * soma_x_quadrado - soma_x * soma_x);
-    b = (soma_y - m * soma_x) / n;
+    m = (float)(n * soma_xy - soma_x * soma_y) / (float)(n * soma_x_quadrado - soma_x * soma_x);
+    b = (float)(soma_y - m * soma_x) / n;
 
     printf("y = n*x + b\n");
-    printf("y = %.2lf*x + %.2lf\n", m, b);
+    printf("y = %.2f*x + %.2f\n", m, b);
 
     return 0;
 }
